@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ormlite-jdbc-4.48">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/ormlite-jdbc-4.48.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mysql-connector-java-5.1.37-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

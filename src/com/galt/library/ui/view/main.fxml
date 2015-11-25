@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="545.0" prefWidth="705.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Книги">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="178.0" layoutY="24.0" prefHeight="402.0" prefWidth="513.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="Название" />
+                              <TableColumn prefWidth="75.0" text="Жанр" />
+                              <TableColumn prefWidth="75.0" text="Автор" />
+                              <TableColumn prefWidth="75.0" text="Издатель" />
+                              <TableColumn prefWidth="96.0" text="Год издания" />
+                              <TableColumn prefWidth="125.0" text="Состояние книги" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="178.0" layoutY="440.0" mnemonicParsing="false" text="Добавить книгу" />
+                        <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фильтр" wrappingWidth="67.037109375" />
+                        <TextField layoutX="14.0" layoutY="59.0" promptText="Название книги" />
+                        <TextField layoutX="14.0" layoutY="101.0" promptText="Автор" />
+                        <TextField layoutX="14.0" layoutY="145.0" promptText="Жанр" />
+                        <TextField layoutX="14.0" layoutY="186.0" promptText="Состояние книги" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Выданные">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab text="Пользователи">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="193.0" layoutY="24.0" prefHeight="402.0" prefWidth="498.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="C1" />
+                              <TableColumn prefWidth="75.0" text="C2" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="193.0" layoutY="441.0" mnemonicParsing="false" text="Добавить книгу" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

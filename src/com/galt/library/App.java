@@ -1,8 +1,10 @@
 package com.galt.library;
 
+import com.galt.library.core.model.Author;
 import com.galt.library.core.model.Book;
-import com.galt.library.ui.view.BookController;
-import com.galt.library.ui.view.Main;
+import com.galt.library.core.model.Genre;
+import com.galt.library.core.model.Publisher;
+import com.galt.library.ui.view.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -54,8 +56,88 @@ public class App extends Application {
             BookController controller = loader.getController();
             controller.setDialogStage(dialogStage);
             controller.setBook(book);
+            controller.setApp(this);
 
             // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
+
+            return controller.isOkClicked();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public boolean showAuthorDialog(Author author) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("ui/view/author.fxml"));
+            Pane page =  loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle(author == null ? "Добавить автора" : "Редактировать автора");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            AuthorController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setApp(this);
+            //controller.setBook(book);
+
+            dialogStage.showAndWait();
+
+            return controller.isOkClicked();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public boolean showGenreDialog(Genre genre) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("ui/view/genre.fxml"));
+            Pane page =  loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle(genre == null ? "Добавить жанр" : "Редактировать жанр");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            GenreController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setApp(this);
+
+            dialogStage.showAndWait();
+
+            return controller.isOkClicked();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public boolean showPublisher(Publisher publisher) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(App.class.getResource("ui/view/publisher.fxml"));
+            Pane page =  loader.load();
+
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle(publisher == null ? "Добавить издателя" : "Редактировать издателя");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            PublisherController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setApp(this);
+
             dialogStage.showAndWait();
 
             return controller.isOkClicked();

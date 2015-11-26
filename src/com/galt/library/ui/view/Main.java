@@ -73,7 +73,9 @@ public class Main {
             row.setOnMouseClicked(event -> {
                 if (event.getClickCount() == 2 && (!row.isEmpty())) {
                     FxBook book = row.getItem();
-                    app.showBookDialog(book.getBook());
+                    if (app.showBookDialog(book.getBook())) {
+                        findBooks();
+                    }
                 }
             });
             return row;
@@ -89,23 +91,41 @@ public class Main {
     }
 
     @FXML
-    public void findBooks() throws SQLException {
+    public void onAddBookBtnClick() {
+        if (app.showBookDialog(null)) {
+            findBooks();
+        }
+    }
+
+    @FXML
+    public void onDeleteBtnClick() {
+        if(helper.deleteBook(tableBooks.getSelectionModel().getSelectedItem().getBook())) {
+            findBooks();
+        }
+    }
+
+    @FXML
+    public void findBooks() {
         String nameLike = "%" + tfBookName.getText() + "%";
         String state = "%" + tfState.getText() + "%";
         String author = "%" + tfAuthor.getText() + "%";
-        String genre =  "%" + tfGenre.getText() + "%";
+        String genre = "%" + tfGenre.getText() + "%";
 
         QueryBuilder<Genre, Integer> genreQb = helper.getGenresHelper().queryBuilder();
-        genreQb.where().like("name_genre", genre);
+        try {
+            genreQb.where().like("name_genre", genre);
+            QueryBuilder<Author, Integer> authorQb = helper.getAuthorsHelper().queryBuilder();
+            authorQb.where().like("last_name_author", author).or().like("middle_name_author", author).or().like("name_author", author);
 
-        QueryBuilder<Author, Integer> authorQb = helper.getAuthorsHelper().queryBuilder();
-        authorQb.where().like("last_name_author", author).or().like("middle_name_author", author).or().like("name_author", author);
+            QueryBuilder<Book, Integer> queryBuilder = helper.getBooksHelper().queryBuilder();
+            queryBuilder.join(genreQb).join(authorQb).where().like("state_book", state).and().like("book_name", nameLike);
 
-        QueryBuilder<Book, Integer> queryBuilder = helper.getBooksHelper().queryBuilder();
-        queryBuilder.join(genreQb).join(authorQb).where().like("state_book", state).and().like("book_name", nameLike);
+            convertBooksToFxBooksAndSet(helper.getBooksHelper().query(queryBuilder.prepare()));
+            tableBooks.setItems(fxBooks);
 
-        convertBooksToFxBooksAndSet(helper.getBooksHelper().query(queryBuilder.prepare()));
-        tableBooks.setItems(fxBooks);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }

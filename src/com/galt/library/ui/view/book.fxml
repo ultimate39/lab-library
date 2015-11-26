@@ -41,16 +41,16 @@
             <TextField fx:id="tfSize" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <TextField fx:id="tfWeight" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <TextField fx:id="tfCost" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <ChoiceBox fx:id="cbfAuthor" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <ChoiceBox fx:id="cbGenre" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ChoiceBox fx:id="cbfAuthor" prefHeight="25.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ChoiceBox fx:id="cbGenre" prefHeight="25.0" prefWidth="251.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <ChoiceBox fx:id="cbPublisher" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
             <ChoiceBox fx:id="cbState" prefHeight="25.0" prefWidth="313.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <Button fx:id="btnBook" layoutX="284.0" layoutY="400.0" mnemonicParsing="false" text="Добавить" />
-      <Button fx:id="btnCancel" layoutX="362.0" layoutY="400.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Отмена" />
-      <Button fx:id="btnAddAuthor" layoutX="400.0" layoutY="241.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" text="+" />
-      <Button fx:id="btnAddGenre" layoutX="400.0" layoutY="314.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" text="+" />
-      <Button fx:id="btnAddPublisher" layoutX="400.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" text="+" />
+      <Button fx:id="btnBook" layoutX="262.0" layoutY="400.0" mnemonicParsing="false" onAction="#onOkClick" text="Добавить" />
+      <Button fx:id="btnCancel" layoutX="362.0" layoutY="400.0" mnemonicParsing="false" onAction="#onCancelClick" prefHeight="25.0" prefWidth="69.0" text="Отмена" />
+      <Button fx:id="btnAddAuthor" layoutX="400.0" layoutY="241.0" mnemonicParsing="false" onAction="#onAddAuthorClick" prefHeight="25.0" prefWidth="31.0" text="+" />
+      <Button fx:id="btnAddGenre" layoutX="400.0" layoutY="314.0" mnemonicParsing="false" onAction="#onAddGenreClick" prefHeight="25.0" prefWidth="31.0" text="+" />
+      <Button fx:id="btnAddPublisher" layoutX="400.0" layoutY="350.0" mnemonicParsing="false" onAction="#onAddPublisherClick" prefHeight="25.0" prefWidth="31.0" text="+" />
    </children>
 </Pane>

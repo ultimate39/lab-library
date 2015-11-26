@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.galt.library.ui.view.AuthorController">
+   <children>
+      <GridPane layoutX="31.0" layoutY="14.0" prefHeight="203.0" prefWidth="407.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="138.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="0.0" prefWidth="310.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="40.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="6.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия" wrappingWidth="139.13671875" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество" wrappingWidth="139.13671875" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рождения" wrappingWidth="139.13671875" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дата смерти" wrappingWidth="116.13671875" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" wrappingWidth="139.13671875" />
+            <TextField fx:id="tfFirstname" GridPane.columnIndex="1" />
+            <TextField fx:id="tfLastname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfSecondname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfDeath" promptText="Формат yyyy-mm-dd" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfBirthday" promptText="Формат yyyy-mm-dd" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnOk" layoutX="252.0" layoutY="234.0" mnemonicParsing="false" onAction="#onAddAuthorClick" text="Добавить" />
+      <Button fx:id="btnCancel" layoutX="355.0" layoutY="234.0" mnemonicParsing="false" onAction="#onCancelClick" prefHeight="25.0" prefWidth="69.0" text="Отмена" />
+   </children>
+</Pane>

@@ -52,6 +52,14 @@ public class DatabaseHelper {
         return null;
     }
 
+    public void updateBook(Book book) {
+        try {
+            books.update(book);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void addBook(Book book) {
         try {
             books.createIfNotExists(book);
@@ -60,12 +68,13 @@ public class DatabaseHelper {
         }
     }
 
-    public void deleteBook(Book book) {
+    public boolean deleteBook(Book book) {
         try {
-            books.delete(book);
+            return books.delete(book) > 0;
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return false;
     }
 
     public List<Author> getAuthors() {
@@ -75,6 +84,31 @@ public class DatabaseHelper {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void updateAuthor(Author author) {
+        try {
+            authors.update(author);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void addAuthor(Author author) {
+        try {
+            authors.createIfNotExists(author);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean deleteAuthor(Author author) {
+        try {
+            return authors.delete(author) > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     public List<Genre> getGenres() {

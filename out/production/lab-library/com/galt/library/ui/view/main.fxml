@@ -23,13 +23,13 @@
                               <TableColumn fx:id="columnBookState" prefWidth="106.0" text="Состояние книги" />
                            </columns>
                         </TableView>
-                        <Button fx:id="btnAddBook" layoutX="178.0" layoutY="440.0" mnemonicParsing="false" text="Добавить книгу" />
+                        <Button fx:id="btnAddBook" layoutX="178.0" layoutY="440.0" mnemonicParsing="false" onAction="#onAddBookBtnClick" text="Добавить книгу" />
                         <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фильтр" wrappingWidth="67.037109375" />
                         <TextField fx:id="tfBookName" layoutX="14.0" layoutY="59.0" onKeyReleased="#findBooks" promptText="Название книги" />
                         <TextField fx:id="tfAuthor" layoutX="14.0" layoutY="101.0" onKeyReleased="#findBooks" promptText="Автор" />
                         <TextField fx:id="tfGenre" layoutX="14.0" layoutY="145.0" onKeyReleased="#findBooks" promptText="Жанр" />
                         <TextField fx:id="tfState" layoutX="14.0" layoutY="186.0" onKeyReleased="#findBooks" promptText="Состояние книги" />
-                        <Button fx:id="btnDeleteBook" layoutX="293.0" layoutY="440.0" mnemonicParsing="false" text="Удалить книгу" />
+                        <Button fx:id="btnDeleteBook" layoutX="293.0" layoutY="440.0" mnemonicParsing="false" onAction="#onDeleteBtnClick" text="Удалить книгу" />
                      </children>
                   </AnchorPane>
             </content>

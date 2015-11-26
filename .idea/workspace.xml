@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cac85153-a45d-4ed5-a276-08556d8ccd25" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\workspace\lab-library\out\production\lab-library\com\galt\library\ui\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\workspace\lab-library\src\com\galt\library\ui\Main.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/App.class" afterPath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/core/model/Author.class" afterPath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/core/model/Author.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/core/model/Book.class" afterPath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/core/model/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/galt/library/App.java" afterPath="$PROJECT_DIR$/src/com/galt/library/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/galt/library/core/model/Author.java" afterPath="$PROJECT_DIR$/src/com/galt/library/core/model/Author.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/galt/library/core/model/Book.java" afterPath="$PROJECT_DIR$/src/com/galt/library/core/model/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/ui/view/main.fxml" afterPath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/ui/view/main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/galt/library/ui/view/main.fxml" afterPath="$PROJECT_DIR$/src/com/galt/library/ui/view/main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lab-library.iws" />
@@ -143,8 +132,8 @@
       <file leaf-file-name="BookController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34500876">
-              <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.821366">
+              <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3880#3881#0" expanded="true" />
@@ -696,6 +685,13 @@
       <option name="number" value="Default" />
       <updated>1448445143524</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added models">
+      <created>1448543195642</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1448543195642</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -738,6 +734,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added models" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1071,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34500876">
-          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.821366">
+          <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3880#3881#0" expanded="true" />

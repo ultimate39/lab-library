@@ -8,11 +8,12 @@ import java.util.Date;
  * Created by Grishechko on 25.11.2015.
  */
 public class Book {
+    public static final String COLUMN_BOOK_NAME = "book_name";
 
     @DatabaseField(generatedId =  true, columnName = "id_book")
     private int id;
 
-    @DatabaseField(columnName = "book_name")
+    @DatabaseField(columnName = COLUMN_BOOK_NAME)
     private String name;
 
     @DatabaseField(columnName = "year_publish_book")
@@ -35,6 +36,12 @@ public class Book {
 
     @DatabaseField(foreign = true, columnName = "id_author", foreignColumnName = "id_author")
     private Author author;
+
+    @DatabaseField(foreign = true, columnName = "id_genre", foreignColumnName = "id_genre")
+    private Genre genre;
+
+    @DatabaseField(foreign = true, columnName = "id_publisher", foreignColumnName = "id_publisher")
+    private Publisher publisher;
 
     public int getId() {
         return id;
@@ -108,18 +115,19 @@ public class Book {
         this.author = author;
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", date=" + date +
-                ", pageNumbers=" + pageNumbers +
-                ", state='" + state + '\'' +
-                ", size='" + size + '\'' +
-                ", weight='" + weight + '\'' +
-                ", cost='" + cost + '\'' +
-                ", author=" + author +
-                '}';
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
     }
 }

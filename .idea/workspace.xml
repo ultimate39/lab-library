@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cac85153-a45d-4ed5-a276-08556d8ccd25" name="Default" comment="" />
+    <list default="true" id="cac85153-a45d-4ed5-a276-08556d8ccd25" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\workspace\lab-library\out\production\lab-library\com\galt\library\ui\Main.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\lab-library\src\com\galt\library\ui\Main.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/App.class" afterPath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/App.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/core/model/Author.class" afterPath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/core/model/Author.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/core/model/Book.class" afterPath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/core/model/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/galt/library/App.java" afterPath="$PROJECT_DIR$/src/com/galt/library/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/galt/library/core/model/Author.java" afterPath="$PROJECT_DIR$/src/com/galt/library/core/model/Author.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/galt/library/core/model/Book.java" afterPath="$PROJECT_DIR$/src/com/galt/library/core/model/Book.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/ui/view/main.fxml" afterPath="$PROJECT_DIR$/out/production/lab-library/com/galt/library/ui/view/main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/galt/library/ui/view/main.fxml" afterPath="$PROJECT_DIR$/src/com/galt/library/ui/view/main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="lab-library.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,16 +35,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/main.fxml">
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2412#2413#0" expanded="true" />
+                <element signature="e#2448#2449#0" expanded="true" />
+                <element signature="e#2479#2480#0" expanded="true" />
+                <element signature="e#2507#2508#0" expanded="true" />
+                <element signature="e#2548#2549#0" expanded="true" />
+                <element signature="e#2582#2583#0" expanded="true" />
+                <element signature="e#2621#2622#0" expanded="true" />
+                <element signature="e#2653#2654#0" expanded="true" />
+                <element signature="e#2706#2707#0" expanded="true" />
+                <element signature="e#2748#2749#0" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
@@ -39,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/galt/library/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,70 +69,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdbcConnectionSource.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/ormlite-jdbc-4.48.jar!/com/j256/ormlite/jdbc/JdbcConnectionSource.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="39.32">
-              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5954466">
-              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#957#958#0" expanded="true" />
-                <element signature="e#990#991#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1116#1117#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1177#1178#0" expanded="true" />
-                <element signature="e#1204#1205#0" expanded="true" />
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1274#1275#0" expanded="true" />
-                <element signature="e#1313#1314#0" expanded="true" />
-                <element signature="e#1347#1348#0" expanded="true" />
-                <element signature="e#1402#1403#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-                <element signature="e#1480#1481#0" expanded="true" />
-                <element signature="e#1508#1509#0" expanded="true" />
-                <element signature="e#1550#1551#0" expanded="true" />
-                <element signature="e#1584#1585#0" expanded="true" />
-                <element signature="e#1615#1616#0" expanded="true" />
-                <element signature="e#1642#1643#0" expanded="true" />
-                <element signature="e#1682#1683#0" expanded="true" />
-                <element signature="e#1714#1715#0" expanded="true" />
-                <element signature="e#1747#1748#0" expanded="true" />
-                <element signature="e#1776#1777#0" expanded="true" />
-                <element signature="e#1820#1821#0" expanded="true" />
-                <element signature="e#1856#1857#0" expanded="true" />
-                <element signature="e#1887#1888#0" expanded="true" />
-                <element signature="e#1914#1915#0" expanded="true" />
-                <element signature="e#1954#1955#0" expanded="true" />
-                <element signature="e#1986#1987#0" expanded="true" />
-                <element signature="e#2019#2020#0" expanded="true" />
-                <element signature="e#2048#2049#0" expanded="true" />
-                <element signature="e#2092#2093#0" expanded="true" />
-                <element signature="e#2128#2129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Librarian.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Librarian.java">
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/db/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2735#2736#0" expanded="true" />
+                <element signature="e#2763#2764#0" expanded="true" />
+                <element signature="e#2815#2816#0" expanded="true" />
+                <element signature="e#2844#2845#0" expanded="true" />
+                <element signature="e#2898#2899#0" expanded="true" />
+                <element signature="e#2928#2929#0" expanded="true" />
+                <element signature="e#2988#2989#0" expanded="true" />
+                <element signature="e#3021#3022#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,54 +93,98 @@
         <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Author.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+              <caret line="79" column="106" selection-start-line="79" selection-start-column="106" selection-end-line="79" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#981#982#0" expanded="true" />
-                <element signature="e#1013#1014#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1142#1143#0" expanded="true" />
-                <element signature="e#1175#1176#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1381#1382#0" expanded="true" />
-                <element signature="e#1421#1422#0" expanded="true" />
-                <element signature="e#1451#1452#0" expanded="true" />
-                <element signature="e#1479#1480#0" expanded="true" />
-                <element signature="e#1519#1520#0" expanded="true" />
-                <element signature="e#1553#1554#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/User.java">
+      <file leaf-file-name="FxBook.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxBook.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+              <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+              <caret line="66" column="73" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
+                <element signature="e#1494#1495#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Publisher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Publisher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+              <folding>
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/BookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34500876">
+              <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3880#3881#0" expanded="true" />
+                <element signature="e#3915#3916#0" expanded="true" />
+                <element signature="e#4066#4067#0" expanded="true" />
+                <element signature="e#4101#4102#0" expanded="true" />
+                <element signature="e#4144#4145#0" expanded="true" />
+                <element signature="e#4197#4198#0" expanded="true" />
+                <element signature="e#4233#4234#0" expanded="true" />
+                <element signature="e#4267#4268#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FxAuthor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxAuthor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Genre.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Genre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding>
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,6 +199,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -191,9 +212,22 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/galt/library.java" />
         <option value="$PROJECT_DIR$/src/com/galt/library/core/App.java" />
-        <option value="$PROJECT_DIR$/src/com/galt/library/App.java" />
-        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/Author.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/ui/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxBase.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxAuthor.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxPublisher.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxBook.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxGenre.java" />
         <option value="$PROJECT_DIR$/src/com/galt/library/core/model/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/ui/view/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/Author.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/db/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/App.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/ui/view/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/Publisher.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/core/model/Genre.java" />
+        <option value="$PROJECT_DIR$/src/com/galt/library/ui/view/BookController.java" />
       </list>
     </option>
   </component>
@@ -259,7 +293,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -282,8 +316,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -339,32 +371,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab-library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -387,7 +393,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,18 +491,23 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mysql-connector-java-5.1.37-bin.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -615,6 +686,9 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cac85153-a45d-4ed5-a276-08556d8ccd25" name="Default" comment="" />
@@ -626,39 +700,57 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32997763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32997763" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="IntelliGuard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IntelliGuard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25950783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/galt/library/ui/view/Main.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -677,11 +769,59 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/ormlite-jdbc-4.48.jar!/com/j256/ormlite/jdbc/JdbcConnectionSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+            <element signature="e#2479#2480#0" expanded="true" />
+            <element signature="e#2507#2508#0" expanded="true" />
+            <element signature="e#2548#2549#0" expanded="true" />
+            <element signature="e#2582#2583#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Librarian.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -693,7 +833,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Librarian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/ormlite-jdbc-4.48.jar!/com/j256/ormlite/jdbc/JdbcConnectionSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.206897">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/javafx-src.zip!/javafx/scene/control/TableColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="704" column="17" selection-start-line="704" selection-start-column="17" selection-end-line="704" selection-end-column="17" />
+          <folding>
+            <element signature="e#28773#28774#0" expanded="false" />
+            <element signature="e#28809#28810#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxGenre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -701,20 +945,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/ormlite-jdbc-4.48.jar!/com/j256/ormlite/jdbc/JdbcConnectionSource.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="39.32">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2576" column="21" selection-start-line="2576" selection-start-column="21" selection-end-line="2576" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/db/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2735#2736#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#2928#2929#0" expanded="true" />
+            <element signature="e#2988#2989#0" expanded="true" />
+            <element signature="e#3021#3022#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/galt/library/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="73" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Publisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+          <folding>
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -722,79 +1019,70 @@
     <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Author.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+          <caret line="79" column="106" selection-start-line="79" selection-start-column="106" selection-end-line="79" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1175#1176#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1553#1554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/fx/FxBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5954466">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1856#1857#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1914#1915#0" expanded="true" />
-            <element signature="e#1954#1955#0" expanded="true" />
-            <element signature="e#1986#1987#0" expanded="true" />
-            <element signature="e#2019#2020#0" expanded="true" />
-            <element signature="e#2048#2049#0" expanded="true" />
-            <element signature="e#2092#2093#0" expanded="true" />
-            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+            <element signature="e#2479#2480#0" expanded="true" />
+            <element signature="e#2507#2508#0" expanded="true" />
+            <element signature="e#2548#2549#0" expanded="true" />
+            <element signature="e#2582#2583#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/core/model/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/galt/library/ui/view/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34500876">
+          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3880#3881#0" expanded="true" />
+            <element signature="e#3915#3916#0" expanded="true" />
+            <element signature="e#4066#4067#0" expanded="true" />
+            <element signature="e#4101#4102#0" expanded="true" />
+            <element signature="e#4144#4145#0" expanded="true" />
+            <element signature="e#4197#4198#0" expanded="true" />
+            <element signature="e#4233#4234#0" expanded="true" />
+            <element signature="e#4267#4268#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -77,13 +77,6 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" +
-                "id=" + id +
-                ", lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", middleName='" + middleName + '\'' +
-                ", birthday=" + birthday +
-                ", death=" + death +
-                '}';
+        return String.format("%s.%s %s", firstName.substring(0, 1), middleName.substring(0, 1), lastName);
     }
 }

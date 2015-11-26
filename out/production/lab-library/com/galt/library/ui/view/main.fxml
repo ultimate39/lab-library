@@ -5,30 +5,31 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.galt.library.ui.view.Main">
    <children>
-      <TabPane prefHeight="545.0" prefWidth="705.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane prefHeight="545.0" prefWidth="872.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Книги">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TableView layoutX="178.0" layoutY="24.0" prefHeight="402.0" prefWidth="513.0">
+                        <TableView fx:id="tableBooks" layoutX="178.0" layoutY="24.0" prefHeight="402.0" prefWidth="674.0">
                            <columns>
-                              <TableColumn prefWidth="75.0" text="Название" />
-                              <TableColumn prefWidth="75.0" text="Жанр" />
-                              <TableColumn prefWidth="75.0" text="Автор" />
-                              <TableColumn prefWidth="75.0" text="Издатель" />
-                              <TableColumn prefWidth="96.0" text="Год издания" />
-                              <TableColumn prefWidth="125.0" text="Состояние книги" />
+                              <TableColumn fx:id="columnBookName" prefWidth="134.0" text="Название" />
+                              <TableColumn fx:id="columnBookGenre" prefWidth="144.0" text="Жанр" />
+                              <TableColumn fx:id="columnBookAuthor" prefWidth="95.0" text="Автор" />
+                              <TableColumn fx:id="columnBookPublisher" prefWidth="105.0" text="Издатель" />
+                              <TableColumn fx:id="columnBookYear" prefWidth="89.0" text="Год издания" />
+                              <TableColumn fx:id="columnBookState" prefWidth="106.0" text="Состояние книги" />
                            </columns>
                         </TableView>
-                        <Button layoutX="178.0" layoutY="440.0" mnemonicParsing="false" text="Добавить книгу" />
+                        <Button fx:id="btnAddBook" layoutX="178.0" layoutY="440.0" mnemonicParsing="false" text="Добавить книгу" />
                         <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фильтр" wrappingWidth="67.037109375" />
-                        <TextField layoutX="14.0" layoutY="59.0" promptText="Название книги" />
-                        <TextField layoutX="14.0" layoutY="101.0" promptText="Автор" />
-                        <TextField layoutX="14.0" layoutY="145.0" promptText="Жанр" />
-                        <TextField layoutX="14.0" layoutY="186.0" promptText="Состояние книги" />
+                        <TextField fx:id="tfBookName" layoutX="14.0" layoutY="59.0" onKeyReleased="#findBooks" promptText="Название книги" />
+                        <TextField fx:id="tfAuthor" layoutX="14.0" layoutY="101.0" onKeyReleased="#findBooks" promptText="Автор" />
+                        <TextField fx:id="tfGenre" layoutX="14.0" layoutY="145.0" onKeyReleased="#findBooks" promptText="Жанр" />
+                        <TextField fx:id="tfState" layoutX="14.0" layoutY="186.0" onKeyReleased="#findBooks" promptText="Состояние книги" />
+                        <Button fx:id="btnDeleteBook" layoutX="293.0" layoutY="440.0" mnemonicParsing="false" text="Удалить книгу" />
                      </children>
                   </AnchorPane>
             </content>

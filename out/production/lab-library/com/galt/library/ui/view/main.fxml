@@ -36,20 +36,33 @@
           </Tab>
           <Tab text="Выданные">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableIssuedBooks" layoutX="173.0" layoutY="32.0" prefHeight="402.0" prefWidth="656.0">
+                           <columns>
+                              <TableColumn fx:id="columnIssueBookName" prefWidth="233.0" text="Название" />
+                              <TableColumn fx:id="columnIssueBookUser" prefWidth="264.0" text="Читатель" />
+                              <TableColumn fx:id="columnIssueBookStatus" prefWidth="158.0" text="Статус" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
             </content>
           </Tab>
             <Tab text="Пользователи">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TableView layoutX="193.0" layoutY="24.0" prefHeight="402.0" prefWidth="498.0">
+                        <TableView fx:id="tableReaders" layoutX="193.0" layoutY="24.0" prefHeight="402.0" prefWidth="608.0">
                            <columns>
-                              <TableColumn prefWidth="75.0" text="C1" />
-                              <TableColumn prefWidth="75.0" text="C2" />
+                              <TableColumn fx:id="columnReaderFirstame" prefWidth="75.0" text="Имя" />
+                              <TableColumn fx:id="columnReaderLastname" prefWidth="117.0" text="Фамилия" />
+                              <TableColumn fx:id="columnReaderSecondName" prefWidth="146.0" text="Отчество" />
+                              <TableColumn fx:id="columnReaderPhone" prefWidth="153.0" text="Телефон" />
+                              <TableColumn fx:id="columnReaderCountbooks" prefWidth="116.0" text="Выданные книги" />
                            </columns>
                         </TableView>
-                        <Button layoutX="193.0" layoutY="441.0" mnemonicParsing="false" text="Добавить книгу" />
+                        <Button fx:id="btnAddReader" layoutX="193.0" layoutY="441.0" mnemonicParsing="false" onAction="#onAddReaderClick" text="Добавить пользователя" />
+                        <Button fx:id="btnDeleteReader" layoutX="350.0" layoutY="441.0" mnemonicParsing="false" onAction="#onDeleteReaderClick" text="Удалить пользователя" />
                      </children>
                   </AnchorPane>
                </content>

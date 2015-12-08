@@ -1,9 +1,6 @@
 package com.galt.library.core.db;
 
-import com.galt.library.core.model.Author;
-import com.galt.library.core.model.Book;
-import com.galt.library.core.model.Genre;
-import com.galt.library.core.model.Publisher;
+import com.galt.library.core.model.*;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.DaoManager;
 import com.j256.ormlite.jdbc.JdbcConnectionSource;
@@ -20,6 +17,9 @@ public class DatabaseHelper {
     private Dao<Author, Integer> authors;
     private Dao<Genre, Integer> genres;
     private Dao<Publisher, Integer> publishers;
+    private Dao<IssuedBook, Integer> issuedBooks;
+    private Dao<Reader, Integer> readers;
+
     private static DatabaseHelper instance;
 
     private DatabaseHelper() {
@@ -30,6 +30,8 @@ public class DatabaseHelper {
             authors = DaoManager.createDao(connectionSource, Author.class);
             genres = DaoManager.createDao(connectionSource, Genre.class);
             publishers = DaoManager.createDao(connectionSource, Publisher.class);
+            issuedBooks = DaoManager.createDao(connectionSource, IssuedBook.class);
+            readers = DaoManager.createDao(connectionSource, Reader.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -127,6 +129,14 @@ public class DatabaseHelper {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public Dao<IssuedBook, Integer> getIssuedBooks() {
+        return issuedBooks;
+    }
+
+    public Dao<Reader, Integer> getReaders() {
+        return readers;
     }
 
     public Dao<Book, Integer> getBooksHelper() {

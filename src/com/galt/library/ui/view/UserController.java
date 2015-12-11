@@ -2,42 +2,48 @@ package com.galt.library.ui.view;
 
 import com.galt.library.App;
 import com.galt.library.core.db.DatabaseHelper;
-import com.galt.library.core.model.Genre;
-import com.galt.library.core.model.Reader;
+import com.galt.library.core.model.User;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import javax.xml.soap.Text;
-
 /**
  * Created by Grishechko on 27.11.2015.
  */
-public class ReaderController {
+public class UserController {
     @FXML TextField tfFirstname;
     @FXML TextField tfSecondname;
     @FXML TextField tfLastname;
     @FXML TextField tfPhone;
+    @FXML TextField tfEmail;
+    @FXML TextField tfNickname;
+    @FXML TextField tfCountry;
+    @FXML TextField tfCity;
 
     @FXML Button btnReader;
     @FXML Button btnCancel;
 
     private Stage dialogStage;
-    private Reader reader;
+    private User user;
     private DatabaseHelper helper;
     private boolean isOkClicked;
     private boolean isEdit;
     private App app;
 
     private void updateReader() throws Exception{
-        if(this.reader == null) {
-            reader = new Reader();
+        if(this.user == null) {
+            user = new User();
         }
-        reader.setFirstname(tfFirstname.getText());
-        reader.setSecondname(tfSecondname.getText());
-        reader.setLastname(tfLastname.getText());
-        reader.setPhonenumber(tfPhone.getText());
+        user.setFirstname(tfFirstname.getText());
+        user.setSecondname(tfSecondname.getText());
+        user.setLastname(tfLastname.getText());
+        user.setPhonenumber(tfPhone.getText());
+        user.setEmail(tfEmail.getText());
+        user.setNickname(tfNickname.getText());
+        user.setCountry(tfCountry.getText());
+        user.setCity(tfCity.getText());
+
     }
 
     public void setDialogStage(Stage stage) {
@@ -49,9 +55,9 @@ public class ReaderController {
         try {
             updateReader();
             if(isEdit) {
-                helper.getReaders().update(reader);
+                helper.getReaders().update(user);
             } else {
-                helper.getReaders().createIfNotExists(reader);
+                helper.getReaders().createIfNotExists(user);
             }
             isOkClicked = true;
         } catch (Exception e) {
@@ -60,15 +66,19 @@ public class ReaderController {
         dialogStage.close();
     }
 
-    public void setReader(Reader reader) {
-        this.reader = reader;
-        if(reader != null) {
+    public void setUser(User user) {
+        this.user = user;
+        if(user != null) {
             btnReader.setText("Редактировать");
             isEdit = true;
-            tfFirstname.setText(reader.getFirstname());
-            tfSecondname.setText(reader.getSecondname());
-            tfLastname.setText(reader.getLastname());
-            tfPhone.setText(reader.getPhonenumber());
+            tfFirstname.setText(user.getFirstname());
+            tfSecondname.setText(user.getSecondname());
+            tfLastname.setText(user.getLastname());
+            tfPhone.setText(user.getPhonenumber());
+            tfEmail.setText(user.getEmail());
+            tfNickname.setText(user.getNickname());
+            tfCountry.setText(user.getCountry());
+            tfCity.setText(user.getCity());
         }
     }
 
@@ -89,4 +99,6 @@ public class ReaderController {
     public void setApp(App app) {
         this.app = app;
     }
+
+
 }

@@ -8,40 +8,49 @@ import java.util.Date;
  * Created by Grishechko on 25.11.2015.
  */
 public class Book {
-    public static final String COLUMN_BOOK_NAME = "book_name";
+    public static final String COLUMN_BOOK_NAME = "name_book";
 
-    @DatabaseField(generatedId =  true, columnName = "id_book")
+    @DatabaseField(generatedId =  true, columnName = "book_id")
     private int id;
 
     @DatabaseField(columnName = COLUMN_BOOK_NAME)
     private String name;
 
-    @DatabaseField(columnName = "year_publish_book")
+    @DatabaseField(columnName = "release_date")
     private Date date;
 
-    @DatabaseField(columnName = "page_numbers_book")
+    @DatabaseField(columnName = "number_pages")
     private Integer pageNumbers;
 
-    @DatabaseField(columnName = "state_book")
-    private String state;
+    @DatabaseField(columnName = "language_book")
+    String language;
 
-    @DatabaseField(columnName = "size_book")
-    private String size;
+    @DatabaseField(columnName = "cost_id", foreign = true, foreignColumnName = "cost_id")
+    private Cost cost;
 
-    @DatabaseField(columnName = "weight_book")
-    private String weight;
+    @DatabaseField(columnName = "book_type")
+    String type = " ";
 
-    @DatabaseField(columnName = "cost_book")
-    private String cost;
+    @DatabaseField(columnName = "book_format")
+    String format = " ";
 
-    @DatabaseField(foreign = true, columnName = "id_author", foreignColumnName = "id_author")
+    @DatabaseField(columnName = "book_tome")
+    Integer booktome = 1;
+
+    @DatabaseField(columnName = "book_numbers")
+    Integer booknumbers;
+
+    @DatabaseField(foreign = true, columnName = "author_id", foreignColumnName = "author_id")
     private Author author;
 
-    @DatabaseField(foreign = true, columnName = "id_genre", foreignColumnName = "id_genre")
+    @DatabaseField(foreign = true, columnName = "genre_id", foreignColumnName = "genre_id")
     private Genre genre;
 
-    @DatabaseField(foreign = true, columnName = "id_publisher", foreignColumnName = "id_publisher")
+    @DatabaseField(foreign = true, columnName = "publisher_id", foreignColumnName = "publisher_id")
     private Publisher publisher;
+
+    @DatabaseField(foreign = true, columnName = "audiobooks_id", foreignColumnName = "audiobooks_id")
+    private AudioBook audioBook;
 
     public int getId() {
         return id;
@@ -75,35 +84,11 @@ public class Book {
         this.pageNumbers = pageNumbers;
     }
 
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public String getWeight() {
-        return weight;
-    }
-
-    public void setWeight(String weight) {
-        this.weight = weight;
-    }
-
-    public String getCost() {
+    public Cost getCost() {
         return cost;
     }
 
-    public void setCost(String cost) {
+    public void setCost(Cost cost) {
         this.cost = cost;
     }
 
@@ -129,5 +114,53 @@ public class Book {
 
     public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public AudioBook getAudioBook() {
+        return audioBook;
+    }
+
+    public void setAudioBook(AudioBook audioBook) {
+        this.audioBook = audioBook;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getFormat() {
+        return format;
+    }
+
+    public void setFormat(String format) {
+        this.format = format;
+    }
+
+    public Integer getBooktome() {
+        return booktome;
+    }
+
+    public void setBooktome(Integer booktome) {
+        this.booktome = booktome;
+    }
+
+    public Integer getBooknumbers() {
+        return booknumbers;
+    }
+
+    public void setBooknumbers(Integer booknumbers) {
+        this.booknumbers = booknumbers;
     }
 }

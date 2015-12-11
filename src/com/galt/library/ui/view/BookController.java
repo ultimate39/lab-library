@@ -2,10 +2,7 @@ package com.galt.library.ui.view;
 
 import com.galt.library.App;
 import com.galt.library.core.db.DatabaseHelper;
-import com.galt.library.core.model.Author;
-import com.galt.library.core.model.Book;
-import com.galt.library.core.model.Genre;
-import com.galt.library.core.model.Publisher;
+import com.galt.library.core.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
@@ -13,8 +10,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+import java.awt.*;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Observable;
@@ -26,20 +26,26 @@ public class BookController {
     @FXML TextField tfName;
     @FXML TextField tfYear;
     @FXML TextField tfPageNumbers;
-    @FXML TextField tfSize;
-    @FXML TextField tfWeight;
+    @FXML TextField tfLanguage;
+    @FXML TextField tfBooktype;
     @FXML TextField tfCost;
+    @FXML TextField tfDisountCost;
+    @FXML TextField tfBooknumbers;
+
 
     @FXML ChoiceBox<Author> cbfAuthor;
     @FXML ChoiceBox<Genre> cbGenre;
     @FXML ChoiceBox<Publisher> cbPublisher;
-    @FXML ChoiceBox<String> cbState;
+    @FXML ChoiceBox<AudioBook> cbAudiobooks;
 
     @FXML Button btnAddAuthor;
     @FXML Button btnAddGenre;
     @FXML Button btnAddPublisher;
     @FXML Button btnBook;
     @FXML Button btnCancel;
+
+    @FXML GridPane gpAudiobook;
+
 
     private Stage dialogStage;
     private Book book;
@@ -51,38 +57,26 @@ public class BookController {
     public void setBook(Book book) {
         this.book = book;
         isEdit = book != null;
-        ObservableList<String> states = FXCollections.observableArrayList();
-        states.addAll("ХОРОШЕЕ", "СРЕДНЕЕ", "ПЛОХОЕ");
-        cbState.setItems(states);
         //Genre
         updateChoiceBoxGenres();
         //Publisher
         updateChoiceBoxPublishers();
         //Authors
         updateChoiceBoxAuthors();
+        //Audiobooks
+        updateChoiceBoxAudiobooks();
         if(book != null){
             tfName.setText(book.getName());
             //Year
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
             tfYear.setText(formatter.format(book.getDate()));
-
             tfPageNumbers.setText(book.getPageNumbers().toString());
-            tfSize.setText(book.getSize());
-            tfWeight.setText(book.getWeight());
-            tfCost.setText(book.getCost());
+            tfLanguage.setText(book.getLanguage());
+            tfBooktype.setText(book.getType());
+            tfCost.setText(String.valueOf(book.getCost().getSize()));
+            tfDisountCost.setText(String.valueOf(book.getCost().getDiscount()));
+            tfBooknumbers.setText(String.valueOf(book.getBooknumbers()));
             btnBook.setText("Редактировать");
-
-            //Initialize check boxes
-
-
-            int selectPos = 0;
-            for(String state : states) {
-                if(state.equalsIgnoreCase(book.getState())) {
-                    cbState.getSelectionModel().select(selectPos);
-                    break;
-                }
-                selectPos++;
-            }
         }
     }
 
@@ -134,6 +128,26 @@ public class BookController {
         }
     }
 
+    private void updateChoiceBoxAudiobooks() {
+        ObservableList<AudioBook> audiobooks = FXCollections.observableArrayList();
+        try {
+            audiobooks.addAll(helper.getAudioBook().queryForAll());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        cbAudiobooks.setItems(audiobooks);
+        if(book != null && book.getAudioBook() != null) {
+            int selectPos = 0;
+            for (AudioBook audioBook : audiobooks) {
+                if (audioBook.getId().equals(book.getAudioBook().getId())) {
+                    cbAudiobooks.getSelectionModel().select(selectPos);
+                    break;
+                }
+                selectPos++;
+            }
+        }
+    }
+
     private void updateBook() throws Exception{
         if(this.book == null) {
             book = new Book();
@@ -142,13 +156,18 @@ public class BookController {
         DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         book.setDate(formatter.parse(tfYear.getText()));
         book.setPageNumbers(Integer.parseInt(tfPageNumbers.getText()));
-        book.setSize(tfSize.getText());
-        book.setWeight(tfWeight.getText());
-        book.setCost(tfCost.getText());
+        book.setLanguage(tfLanguage.getText());
+        book.setType(tfBooktype.getText());
+        Cost cost = new Cost();
+        cost.setSize(Integer.parseInt(tfCost.getText()));
+        cost.setDiscount(Integer.parseInt(tfDisountCost.getText()));
+        helper.getCosts().create(cost);
+        book.setCost(helper.getCosts().queryForAll().get(helper.getCosts().queryForAll().size() - 1));
         book.setAuthor(cbfAuthor.getValue());
         book.setGenre(cbGenre.getValue());
         book.setPublisher(cbPublisher.getValue());
-        book.setState(cbState.getValue());
+        book.setAudioBook(cbAudiobooks.getValue());
+        book.setBooknumbers(Integer.parseInt(tfBooknumbers.getText()));
     }
 
     public void setDialogStage(Stage stage) {
@@ -194,6 +213,13 @@ public class BookController {
     private void onAddPublisherClick() {
         if(app.showPublisher(null)) {
             updateChoiceBoxPublishers();
+        }
+    }
+
+    @FXML
+    private void onAddAudioBook() {
+        if(app.showAudiobook(null)) {
+            updateChoiceBoxAudiobooks();
         }
     }
 

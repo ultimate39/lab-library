@@ -1,5 +1,6 @@
 package com.galt.library;
 
+import com.galt.library.core.Constants;
 import com.galt.library.core.model.*;
 import com.galt.library.ui.view.*;
 import javafx.application.Application;
@@ -7,7 +8,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -21,13 +21,14 @@ public class App extends Application {
 
     Stage primaryStage;
     public Pane mainPane;
+    private Integer rights;
 
     @Override
     public void start(final Stage primaryStage) throws Exception {
         this.primaryStage = primaryStage;
         FXMLLoader loader = new FXMLLoader(App.class.getResource("ui/view/main.fxml"));
         Parent root = loader.load();
-        primaryStage.setTitle("Библиотека");
+        primaryStage.setTitle("Интернет библиотека");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
         primaryStage.setMinWidth(610);
@@ -35,6 +36,11 @@ public class App extends Application {
         Main main = loader.getController();
         main.setApp(this);
         primaryStage.getIcons().add(new Image(App.class.getResource("book.png").toURI().toString()));
+        primaryStage.hide();
+        if(showLoginDialog()) {
+            primaryStage.show();
+            main.update();
+        }
     }
 
     public boolean showBookDialog(Book book) {
@@ -121,23 +127,23 @@ public class App extends Application {
         }
     }
 
-    public boolean showReaderDialog(Reader reader) {
+    public boolean showReaderDialog(User user) {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(App.class.getResource("ui/view/reader.fxml"));
+            loader.setLocation(App.class.getResource("ui/view/user.fxml"));
             Pane page =  loader.load();
 
             Stage dialogStage = new Stage();
-            dialogStage.setTitle(reader == null ? "Добавить пользователя" : "Редактировать пользователя");
+            dialogStage.setTitle(user == null ? "Добавить пользователя" : "Редактировать пользователя");
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
 
-            ReaderController controller = loader.getController();
+            UserController controller = loader.getController();
             controller.setDialogStage(dialogStage);
             controller.setApp(this);
-            controller.setReader(reader);
+            controller.setUser(user);
 
             dialogStage.showAndWait();
 
@@ -174,23 +180,23 @@ public class App extends Application {
         }
     }
 
-    public boolean showIssueBook(Book book) {
+    public boolean showAudiobook(AudioBook audioBook) {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(App.class.getResource("ui/view/issuebook.fxml"));
+            loader.setLocation(App.class.getResource("ui/view/audiobook.fxml"));
             Pane page =  loader.load();
 
             Stage dialogStage = new Stage();
-            dialogStage.setTitle("Выдать книгу");
+            dialogStage.setTitle(audioBook == null ? "Добавить аудиокнигу" : "Редактировать аудиокнигу");
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
 
-            IssuebookContoller controller = loader.getController();
+            AudiobookController controller = loader.getController();
+            controller.setAudiobook(audioBook);
             controller.setDialogStage(dialogStage);
             controller.setApp(this);
-            controller.setBook(book);
 
             dialogStage.showAndWait();
 
@@ -200,6 +206,7 @@ public class App extends Application {
             return false;
         }
     }
+
 
    /* public boolean showReturnBookDialog(IssuedBook book) {
         try {
@@ -227,6 +234,40 @@ public class App extends Application {
             return false;
         }
     }*/
+
+    public boolean showLoginDialog() {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(App.class.getResource("ui/view/login.fxml"));
+        Pane page = null;
+        try {
+            page = loader.load();
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Авторизация");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            LoginController controller = loader.getController();
+            //noinspection unchecked
+            controller.setApp(this);
+            controller.setDialogStage(dialogStage);
+
+            dialogStage.showAndWait();
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public void setRights(int rights) {
+        this.rights = rights;
+    }
+
+    public boolean isAdminRights() {
+        return rights == Constants.RIGHTS_TEACHER;
+    }
 
     public static void main(String[] args) {
         App.launch(args);

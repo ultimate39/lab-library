@@ -17,10 +17,9 @@
                            <columns>
                               <TableColumn fx:id="columnBookName" prefWidth="134.0" text="Название" />
                               <TableColumn fx:id="columnBookGenre" prefWidth="144.0" text="Жанр" />
-                              <TableColumn fx:id="columnBookAuthor" prefWidth="95.0" text="Автор" />
-                              <TableColumn fx:id="columnBookPublisher" prefWidth="105.0" text="Издатель" />
-                              <TableColumn fx:id="columnBookYear" prefWidth="89.0" text="Год издания" />
-                              <TableColumn fx:id="columnBookState" prefWidth="106.0" text="Состояние книги" />
+                              <TableColumn fx:id="columnBookAuthor" prefWidth="135.0" text="Автор" />
+                              <TableColumn fx:id="columnBookPublisher" prefWidth="133.0" text="Издатель" />
+                              <TableColumn fx:id="columnBookYear" prefWidth="127.0" text="Год издания" />
                            </columns>
                         </TableView>
                         <Button fx:id="btnAddBook" layoutX="178.0" layoutY="440.0" mnemonicParsing="false" onAction="#onAddBookBtnClick" text="Добавить книгу" />
@@ -28,24 +27,9 @@
                         <TextField fx:id="tfBookName" layoutX="14.0" layoutY="59.0" onKeyReleased="#findBooks" promptText="Название книги" />
                         <TextField fx:id="tfAuthor" layoutX="14.0" layoutY="101.0" onKeyReleased="#findBooks" promptText="Автор" />
                         <TextField fx:id="tfGenre" layoutX="14.0" layoutY="145.0" onKeyReleased="#findBooks" promptText="Жанр" />
-                        <TextField fx:id="tfState" layoutX="14.0" layoutY="186.0" onKeyReleased="#findBooks" promptText="Состояние книги" />
                         <Button fx:id="btnDeleteBook" layoutX="293.0" layoutY="440.0" mnemonicParsing="false" onAction="#onDeleteBtnClick" text="Удалить книгу" />
                      </children>
                   </AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="Выданные">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <TableView fx:id="tableIssuedBooks" layoutX="173.0" layoutY="32.0" prefHeight="402.0" prefWidth="656.0">
-                           <columns>
-                              <TableColumn fx:id="columnIssueBookName" prefWidth="233.0" text="Название" />
-                              <TableColumn fx:id="columnIssueBookUser" prefWidth="264.0" text="Читатель" />
-                              <TableColumn fx:id="columnIssueBookStatus" prefWidth="158.0" text="Статус" />
-                           </columns>
-                        </TableView>
-                     </children></AnchorPane>
             </content>
           </Tab>
             <Tab text="Пользователи">
@@ -58,11 +42,28 @@
                               <TableColumn fx:id="columnReaderLastname" prefWidth="117.0" text="Фамилия" />
                               <TableColumn fx:id="columnReaderSecondName" prefWidth="146.0" text="Отчество" />
                               <TableColumn fx:id="columnReaderPhone" prefWidth="153.0" text="Телефон" />
-                              <TableColumn fx:id="columnReaderCountbooks" prefWidth="116.0" text="Выданные книги" />
+                              <TableColumn fx:id="columnReaderNickname" prefWidth="116.0" text="Ник" />
                            </columns>
                         </TableView>
                         <Button fx:id="btnAddReader" layoutX="193.0" layoutY="441.0" mnemonicParsing="false" onAction="#onAddReaderClick" text="Добавить пользователя" />
                         <Button fx:id="btnDeleteReader" layoutX="350.0" layoutY="441.0" mnemonicParsing="false" onAction="#onDeleteReaderClick" text="Удалить пользователя" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Аудиокниги">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableAudiobook" layoutX="178.0" layoutY="24.0" prefHeight="402.0" prefWidth="674.0">
+                           <columns>
+                              <TableColumn fx:id="columnAudiobookName" prefWidth="259.0" text="Название" />
+                              <TableColumn fx:id="columnAudiobookBitrate" prefWidth="236.0" text="Битрейт" />
+                              <TableColumn fx:id="columnAudiobookLength" prefWidth="178.0" text="Длина" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnAddAudiobook" layoutX="178.0" layoutY="440.0" mnemonicParsing="false" onAction="#onAddAudioBook" text="Добавить аудиокнигу" />
+                        <Button fx:id="btnDeleteAudiobook" layoutX="321.0" layoutY="440.0" mnemonicParsing="false" onAction="#onDeleteAudiobookClick" text="Удалить аудиокнигу" />
                      </children>
                   </AnchorPane>
                </content>

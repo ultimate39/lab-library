@@ -18,10 +18,6 @@ public class FxBook extends FxBase<Book> {
     private ObjectProperty<FxGenre> genre;
     private ObjectProperty<Date> date;
     private IntegerProperty pageNumbers;
-    private StringProperty state;
-    private StringProperty size;
-    private StringProperty weight;
-    private StringProperty cost;
     private ObjectProperty<FxAuthor> author;
     private ObjectProperty<FxPublisher> publisher;
 
@@ -36,10 +32,6 @@ public class FxBook extends FxBase<Book> {
         name = new SimpleStringProperty(object.getName());
         date = new SimpleObjectProperty<>(object.getDate());
         pageNumbers = new SimpleIntegerProperty(object.getPageNumbers());
-        state = new SimpleStringProperty(object.getState());
-        size = new SimpleStringProperty(object.getSize());
-        weight = new SimpleStringProperty(object.getWeight());
-        cost = new SimpleStringProperty(object.getCost());
         author = new SimpleObjectProperty<>(new FxAuthor(object.getAuthor()));
         genre = new SimpleObjectProperty<>(new FxGenre(object.getGenre()));
         publisher = new SimpleObjectProperty<>(new FxPublisher(object.getPublisher()));
@@ -91,54 +83,6 @@ public class FxBook extends FxBase<Book> {
 
     public void setPageNumbers(int pageNumbers) {
         this.pageNumbers.set(pageNumbers);
-    }
-
-    public String getState() {
-        return state.get();
-    }
-
-    public StringProperty stateProperty() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state.set(state);
-    }
-
-    public String getSize() {
-        return size.get();
-    }
-
-    public StringProperty sizeProperty() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size.set(size);
-    }
-
-    public String getWeight() {
-        return weight.get();
-    }
-
-    public StringProperty weightProperty() {
-        return weight;
-    }
-
-    public void setWeight(String weight) {
-        this.weight.set(weight);
-    }
-
-    public String getCost() {
-        return cost.get();
-    }
-
-    public StringProperty costProperty() {
-        return cost;
-    }
-
-    public void setCost(String cost) {
-        this.cost.set(cost);
     }
 
     public Book getBook() {

@@ -6,13 +6,13 @@ import com.j256.ormlite.field.DatabaseField;
  * Created by Grishechko on 26.11.2015.
  */
 public class Genre {
-    @DatabaseField(generatedId = true, columnName = "id_genre")
+    @DatabaseField(generatedId = true, columnName = "genre_id")
     Integer id;
 
     @DatabaseField(columnName = "name_genre")
     String name;
 
-    @DatabaseField(columnName = "age_restriction")
+    @DatabaseField(columnName = "age_linit")
     int ageRestriction;
 
     public Integer getId() {

@@ -7,7 +7,7 @@ import com.j256.ormlite.field.DatabaseField;
  */
 public class Publisher {
 
-    @DatabaseField(generatedId = true, columnName = "id_publisher")
+    @DatabaseField(generatedId = true, columnName = "publisher_id")
     private Integer id;
 
     @DatabaseField(columnName = "name_publisher")
@@ -15,6 +15,9 @@ public class Publisher {
 
     @DatabaseField(columnName = "phone_number_publisher")
     private String phoneNumberPublisher;
+
+    @DatabaseField(columnName = "address_id")
+    Integer addressId = 1;
 
     public Integer getId() {
         return id;

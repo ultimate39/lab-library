@@ -12,26 +12,28 @@ import java.util.List;
  * Created by Grishechko on 26.11.2015.
  */
 public class DatabaseHelper {
-    private final String URL = "jdbc:mysql://localhost:3306/lab?user=root&password=root";
+    private final String URL = "jdbc:mysql://localhost:3306/music_internet_library?user=root&password=root";
     private Dao<Book, Integer> books;
     private Dao<Author, Integer> authors;
     private Dao<Genre, Integer> genres;
     private Dao<Publisher, Integer> publishers;
-    private Dao<IssuedBook, Integer> issuedBooks;
-    private Dao<Reader, Integer> readers;
+    private Dao<User, Integer> readers;
+    private Dao<AudioBook, Integer> audioBook;
+    private Dao<Cost, Integer> costs;
 
     private static DatabaseHelper instance;
 
     private DatabaseHelper() {
         JdbcConnectionSource connectionSource = null;
         try {
-            connectionSource = new JdbcConnectionSource("jdbc:mysql://localhost:3306/lab?user=root&password=root");
+            connectionSource = new JdbcConnectionSource(URL);
             books = DaoManager.createDao(connectionSource, Book.class);
             authors = DaoManager.createDao(connectionSource, Author.class);
             genres = DaoManager.createDao(connectionSource, Genre.class);
             publishers = DaoManager.createDao(connectionSource, Publisher.class);
-            issuedBooks = DaoManager.createDao(connectionSource, IssuedBook.class);
-            readers = DaoManager.createDao(connectionSource, Reader.class);
+            readers = DaoManager.createDao(connectionSource, User.class);
+            audioBook = DaoManager.createDao(connectionSource, AudioBook.class);
+            costs = DaoManager.createDao(connectionSource, Cost.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -131,11 +133,8 @@ public class DatabaseHelper {
         return null;
     }
 
-    public Dao<IssuedBook, Integer> getIssuedBooks() {
-        return issuedBooks;
-    }
 
-    public Dao<Reader, Integer> getReaders() {
+    public Dao<User, Integer> getReaders() {
         return readers;
     }
 
@@ -155,4 +154,19 @@ public class DatabaseHelper {
         return publishers;
     }
 
+    public Dao<AudioBook, Integer> getAudioBook() {
+        return audioBook;
+    }
+
+    public void setAudioBook(Dao<AudioBook, Integer> audioBook) {
+        this.audioBook = audioBook;
+    }
+
+    public Dao<Cost, Integer> getCosts() {
+        return costs;
+    }
+
+    public void setCosts(Dao<Cost, Integer> costs) {
+        this.costs = costs;
+    }
 }

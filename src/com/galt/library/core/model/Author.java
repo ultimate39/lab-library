@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class Author {
 
-    @DatabaseField(generatedId = true, columnName = "id_author")
+    @DatabaseField(generatedId = true, columnName = "author_id")
     private Integer id;
 
     @DatabaseField(columnName = "last_name_author")

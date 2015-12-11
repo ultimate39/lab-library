@@ -23,7 +23,7 @@ public class IssuedBook {
     Date dateReturnBook;
 
     @DatabaseField(columnName = "id_reader", foreign = true, foreignColumnName = "id_reader")
-    Reader reader;
+    User user;
 
     @DatabaseField(columnName = "id_book", foreignColumnName = "id_book", foreign = true)
     Book book;
@@ -52,12 +52,12 @@ public class IssuedBook {
         this.dateReturnBook = dateReturnBook;
     }
 
-    public Reader getReader() {
-        return reader;
+    public User getUser() {
+        return user;
     }
 
-    public void setReader(Reader reader) {
-        this.reader = reader;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Integer getId() {
